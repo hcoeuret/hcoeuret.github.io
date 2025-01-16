@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles/menu.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mea+Culpa&display=swap" rel="stylesheet">
+<title>Menu</title>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script src="script/script.js">
+  </script>
+  </head>
+  <body>
+    <div class="main-column">
+      <p class="intro">Please choose your pizza and click "order"</p>
+      <div class="pizza-card">
+        <img class="pizza-img" src="photos/regina.jpg" alt="">
+        <div class="ingredients-card">
+          <p class="pizza-title">la Toulousaine</p>
+          <p class="ingredients">Tomato, Barbecue sauce, ground beef, cheddar, mozzarela, oignons, olives</p>
+        </div>
+        <button class="order-button" onclick="sendEmail('La Toulousaine')">Order pizza</button>
+      </div>
+      <div class="pizza-card">
+        <img class="pizza-img" src="photos/regina.jpg" alt="">
+        <div class="ingredients-card">
+          <p class="pizza-title">Il corso</p>
+          <p class="ingredients">Quatro fromagi (Depending on what I find in the store)</p>
+        </div>
+        <button class="order-button" onclick="sendEmail('Il Corso')">Order pizza</button>
+      </div>
+      <div class="pizza-card">
+        <img class="pizza-img" src="photos/regina.jpg" alt="">
+        <div class="ingredients-card">
+          <p class="pizza-title">la Barcelona</p>
+          <p class="ingredients">Tomato, mozzarela, tuna, oignons, black olive, origano</p>
+        </div>
+        <button class="order-button" onclick="sendEmail('La Barcelona')">Order pizza</button>
+      </div>
+      <div class="pizza-card">
+        <img class="pizza-img" src="photos/regina.jpg" alt="">
+        <div class="ingredients-card">
+          <p class="pizza-title">la Marta</p>
+          <p class="ingredients">You choose the pizza you want, the chef will contact you to ask you the details</p>
+        </div>
+        <button class="order-button" onclick="sendEmail('La Marta')">Order pizza</button>
+      </div>
+      
+      <div class="pizza-card">
+        <img class="pizza-img" src="photos/salade.jpg" alt="">
+        <div class="ingredients-card">
+          <p class="pizza-title">la Chèvre miel</p>
+          <p class="ingredients">Honey, hoat goat cheese, balsamique vinegar, persil, nuts, bread, garlic, salad</p>
+        </div>
+        <button class="order-button" onclick="sendEmail('Chevre miel')">Order pizza</button>
+      </div>
+      <div class="pizza-card">
+        <img class="pizza-img" src="photos/salade.jpg" alt="">
+        <div class="ingredients-card">
+          <p class="pizza-title">Salade César</p>
+          <p class="ingredients">cripsy chicken, nuts, salad, tomato, parmesan sauce, crispy bread </p>
+        </div>
+        <button class="order-button" onclick="sendEmail('césar')">Order pizza</button>
+      </div>
+      <div class="pizza-card">
+        <img class="pizza-img" src="photos/lasagne.jpeg" alt="">
+        <div class="ingredients-card">
+          <p class="pizza-title">la Lasagna Feira</p>
+          <p class="ingredients">La classique Lasagna du chef Henri, avec sa salade verte</p>
+        </div>
+        <button class="order-button" onclick="sendEmail('lasagne')">Order pizza</button>
+      </div>
+    </div>
+  </body>
+</html>

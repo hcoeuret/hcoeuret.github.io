@@ -1,0 +1,100 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center; /* Centre horizontalement */
+  align-items: stretch; /* Prend toute la hauteur */
+}
+
+.main-column{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  align-items: center;
+  border-style: solid;
+  border-width: 7px;
+  border-color: rgb(238, 196, 81);
+  
+}
+
+
+/* Si le viewport est inférieur ou égal à 768px (tablettes et mobiles) */
+@media (max-width: 768px) {
+  .main-column{
+    width: 70%;
+  }
+
+}
+
+.intro{
+  margin-top: 20px;
+  border:none;
+  width: 100%;
+  font-size: 25px;
+  font-family: "Mea Culpa", serif;
+  background-color: rgb(238, 196, 81);
+  margin: 0;
+  text-align: center;
+}
+
+.pizza-card{
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin : 10px 20px 10px 20px;
+  box-shadow: 0 0 2px ;
+  cursor: pointer;
+  transition: box-shadow ease 0.1s;
+  max-width: 400px;
+}
+
+.pizza-card:hover{
+  box-shadow: 0 0 5px;
+}
+
+.pizza-title{
+  margin: 0;
+  font-weight: bold;
+  padding: 0;
+}
+
+.pizza-img{
+  object-fit: cover;
+  object-position: center;
+  width: 5rem;
+  height: 5rem;
+}
+
+.ingredients-card{
+  background-color: white;
+  flex: 1; /* Laisse l'espace restant aux ingrédients */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centre verticalement */
+  padding: 10px;
+}
+
+.ingredients{
+  margin: 0;
+  margin-top: 10px;
+  font-size: 12px;
+}
+
+.order-button{
+  border:none;
+  padding: 5px 5px 5px 5px;
+  font-size: 15px;
+  font-family: Lucida Handwriting;
+  background-color: rgb(238, 196, 81);
+  cursor: pointer;
+  transition: background-color ease 0.5s;
+  width: 5rem;
+  height: 5rem;
+}
+
+.order-button:hover{
+  background-color: black;
+  color:rgb(238, 196, 81);
+}
+
