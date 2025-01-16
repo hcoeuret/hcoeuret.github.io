@@ -2,8 +2,14 @@ body {
   margin: 0;
   padding: 0;
   display: flex;
+  align-items: center;
   justify-content: center; /* Centre horizontalement */
   align-items: stretch; /* Prend toute la hauteur */
+}
+
+a {
+  -webkit-tap-highlight-color: transparent; /* Supprime le surlignement bleu */
+  text-decoration: none; /* Facultatif, si vous souhaitez aussi retirer le soulignement */
 }
 
 .main-column{
@@ -14,7 +20,6 @@ body {
   border-style: solid;
   border-width: 7px;
   border-color: rgb(238, 196, 81);
-  
 }
 
 
@@ -30,7 +35,7 @@ body {
   margin-top: 20px;
   border:none;
   width: 100%;
-  font-size: 25px;
+  font-size: 30px;
   font-family: "Mea Culpa", serif;
   background-color: rgb(238, 196, 81);
   margin: 0;
@@ -47,6 +52,7 @@ body {
   cursor: pointer;
   transition: box-shadow ease 0.1s;
   max-width: 400px;
+  height: 6rem;
 }
 
 .pizza-card:hover{
@@ -57,13 +63,14 @@ body {
   margin: 0;
   font-weight: bold;
   padding: 0;
+  font-size: 20px;
 }
 
 .pizza-img{
   object-fit: cover;
   object-position: center;
-  width: 5rem;
-  height: 5rem;
+  width: 6rem;
+  height: 6rem;
 }
 
 .ingredients-card{
@@ -78,19 +85,19 @@ body {
 .ingredients{
   margin: 0;
   margin-top: 10px;
-  font-size: 12px;
+  font-size: 15px;
 }
 
 .order-button{
   border:none;
   padding: 5px 5px 5px 5px;
-  font-size: 15px;
+  font-size: 18px;
   font-family: Lucida Handwriting;
   background-color: rgb(238, 196, 81);
   cursor: pointer;
   transition: background-color ease 0.5s;
-  width: 5rem;
-  height: 5rem;
+  width: 6rem;
+  height: 6rem;
 }
 
 .order-button:hover{
